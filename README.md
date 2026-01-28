@@ -7,7 +7,7 @@
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/Ghostship-AppImage)](https://github.com/pkgforge-dev/Ghostship-AppImage/releases/latest)
 
 <p align="center">
-  <img src="https://github.com/pkgforge-dev.png" width="128" />
+  <img src="https://github.com/HarbourMasters/Ghostship/blob/develop/logo.png" width="128" />
 </p>
 
 

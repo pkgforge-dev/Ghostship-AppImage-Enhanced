@@ -1,6 +1,6 @@
 #!/bin/false
 
-dir=${XDG_CONFIG_HOME:-~/.local}/share/sm64
+dir=${XDG_CONFIG_HOME:-~/.local/share}/sm64
 mkdir -p "$dir"
 cd "$dir"
 

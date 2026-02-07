@@ -17,7 +17,7 @@ quick-sharun /usr/bin/Ghostship /usr/bin/zenity
 mv /opt/ghostship/ghostship.o2r ./AppDir/bin
 mv /opt/ghostship/config.yml ./AppDir/bin
 mv /opt/ghostship/gamecontrollerdb.txt ./AppDir/bin
-cp -f /usr/bin/Ghostship ./AppDir/shared/bin
+
 # Additional changes can be done in between here
 
 # Turn AppDir into AppImage

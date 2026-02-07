@@ -17,7 +17,6 @@ quick-sharun /usr/bin/Ghostship /usr/bin/zenity
 mv /opt/ghostship/ghostship.o2r ./AppDir/bin
 mv /opt/ghostship/config.yml ./AppDir/bin
 mv /opt/ghostship/gamecontrollerdb.txt ./AppDir/bin
-echo 'SHARUN_WORKING_DIR=${SHARUN_DIR}/bin' >> ./AppDir/.env
 
 # Additional changes can be done in between here
 

@@ -31,6 +31,7 @@ VERSION="$(git ls-remote --tags --sort="v:refname" "$REPO" | tail -n1 | sed 's/.
 git clone --branch "$VERSION" --single-branch --recursive --depth 1 "$REPO" ./Ghostship
 echo "$VERSION" > ~/version
 
+mkdir -p ./AppDir/bin
 cd ./Ghostship
 patch -Np1 -i "../ghostship-fix-mtxf_copy-incorrect-values.patch"
 cmake . \
@@ -40,17 +41,9 @@ cmake . \
 cmake --build build --config Release
 cmake --build build --config Release --target GeneratePortO2R
 
-mkdir -p ./AppDir/bin
-mv -v build/assets ./AppDir/bin
-mv -v build/Ghostship ./AppDir/bin
-mv -v build/config.yml ./AppDir/bin
-mv -v build/ghostship.o2r ./AppDir/bin
-wget -O ./AppDir/bin/gamecontrollerdb.txt https://raw.githubusercontent.com/mdqinc/SDL_GameControllerDB/master/gamecontrollerdb.txt
+mv -v build/assets ../AppDir/bin
+mv -v build/Ghostship ../AppDir/bin
+mv -v build/config.yml ../AppDir/bin
+mv -v build/ghostship.o2r ../AppDir/bin
+wget -O ../AppDir/bin/gamecontrollerdb.txt https://raw.githubusercontent.com/mdqinc/SDL_GameControllerDB/master/gamecontrollerdb.txt
 cp -rv logo.png /usr/share/pixmaps/ghostship.png
-ls
-cd ..
-ls
-cd AppDir
-ls
-cd bin
-ls

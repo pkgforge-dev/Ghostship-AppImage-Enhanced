@@ -42,9 +42,15 @@ cmake --build build --config Release --target GeneratePortO2R
 
 mkdir -p ./AppDir/bin
 mv -v build/assets ./AppDir/bin
-ls build/
 mv -v build/Ghostship ./AppDir/bin
 mv -v build/config.yml ./AppDir/bin
 mv -v build/ghostship.o2r ./AppDir/bin
 wget -O ./AppDir/bin/gamecontrollerdb.txt https://raw.githubusercontent.com/mdqinc/SDL_GameControllerDB/master/gamecontrollerdb.txt
 cp -rv logo.png /usr/share/pixmaps/ghostship.png
+ls
+cd ..
+ls
+cd AppDir
+ls
+cd bin
+ls

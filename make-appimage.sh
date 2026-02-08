@@ -13,7 +13,7 @@ export ICON=/usr/share/pixmaps/ghostship.png
 export DEPLOY_OPENGL=1
 
 # Deploy dependencies
-mkdir -p ./AppDir/bin
+#mkdir -p ./AppDir/bin
 #mv /opt/ghostship/* ./AppDir/bin
 #mv /opt/ghostship/ghostship.o2r ./AppDir/bin
 #mv /opt/ghostship/config.yml ./AppDir/bin

@@ -13,10 +13,13 @@ export DESKTOP=/usr/share/applications/ghostship.desktop
 export DEPLOY_OPENGL=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/Ghostship /usr/bin/zenity
-mv /opt/ghostship/ghostship.o2r ./AppDir/bin
-mv /opt/ghostship/config.yml ./AppDir/bin
-mv /opt/ghostship/gamecontrollerdb.txt ./AppDir/bin
+mkdir -p ./AppDir/bin
+mv /opt/ghostship/* ./AppDir/bin
+#mv /opt/ghostship/ghostship.o2r ./AppDir/bin
+#mv /opt/ghostship/config.yml ./AppDir/bin
+#mv /opt/ghostship/gamecontrollerdb.txt ./AppDir/bin
+#quick-sharun /usr/bin/Ghostship /usr/bin/zenity
+quick-sharun /usr/bin/*
 
 # Additional changes can be done in between here
 

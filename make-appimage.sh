@@ -19,7 +19,7 @@ mv /opt/ghostship/* ./AppDir/bin
 #mv /opt/ghostship/config.yml ./AppDir/bin
 #mv /opt/ghostship/gamecontrollerdb.txt ./AppDir/bin
 #quick-sharun /usr/bin/Ghostship /usr/bin/zenity
-quick-sharun /usr/bin/*
+quick-sharun ./AppDir/bin/*
 
 # Additional changes can be done in between here
 

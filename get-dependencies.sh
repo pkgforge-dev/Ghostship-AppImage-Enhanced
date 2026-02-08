@@ -18,7 +18,8 @@ make-aur-package zenity-rs-bin
 # If the application needs to be manually built that has to be done down here
 echo "Making stable build of Ghostship..."
 echo "---------------------------------------------------------------"
-VERSION="$(git ls-remote --tags --sort="v:refname" https://github.com/HarbourMasters/Ghostship | tail -n1 | sed 's/.*\///; s/\^{}//; s/^v//')"
+REPO="https://github.com/HarbourMasters/Ghostship"
+VERSION="$(git ls-remote --tags --sort="v:refname" "$REPO" | tail -n1 | sed 's/.*\///; s/\^{}//; s/^v//')"
 git clone --branch v"$VERSION" --single-branch --recursive --depth 1 "$REPO" ./Ghostship
 echo "$VERSION" > ~/version
 

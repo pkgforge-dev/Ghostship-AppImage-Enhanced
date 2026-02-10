@@ -17,7 +17,7 @@
 
 </div>
 
-### ⚠️ Need to generate `sm64.o2r` using official [AppImage](https://github.com/HarbourMasters/Ghostship/releases/latest) and place in ~/.local/share/sm64/ ⚠️
+### ⚠️ Need to generate `sm64.o2r` using official [AppImage](https://github.com/HarbourMasters/Ghostship/releases/latest) and place in `~/.local/share/sm64/` ⚠️
 
 ---
 

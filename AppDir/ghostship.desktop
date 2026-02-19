@@ -5,4 +5,5 @@ Exec=Ghostship
 Terminal=false
 Icon=ghostship
 Type=Application
+StartupWMClass=Ghostship
 Categories=Game;Retro;

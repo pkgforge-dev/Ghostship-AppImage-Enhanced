@@ -1,5 +1,5 @@
 #!/bin/sh
-dir=${XDG_DATA_HOME:-~/.local/share}/sm64
+dir=$DATADIR/sm64
 mkdir -p "$dir"
 cd "$dir"
 

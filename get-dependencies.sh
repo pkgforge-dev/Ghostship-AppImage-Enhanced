@@ -7,15 +7,16 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
-    cmake         \
-    fmt           \
-    libzip        \
-    mbedtls3      \
-    nlohmann-json \
-    sdl2-compat   \
-    spdlog        \
-    tcc           \
-    tinyxml2      \
+    cmake          \
+    fmt            \
+    libzip         \
+    mbedtls3       \
+    nlohmann-json  \
+    sdl2-compat    \
+    shaderc        \
+    spdlog         \
+    tcc            \
+    tinyxml2       \
     vulkan-headers
 
 echo "Installing debloated packages..."

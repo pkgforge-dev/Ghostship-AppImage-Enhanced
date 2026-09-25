@@ -15,7 +15,8 @@ pacman -Syu --noconfirm \
     sdl2-compat   \
     spdlog        \
     tcc           \
-    tinyxml2
+    tinyxml2      \
+    vulkan-headers
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
@@ -32,7 +33,6 @@ echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
 cd ./Ghostship
-#patch -Np1 -i "../ghostship-fix-mtxf_copy-incorrect-values.patch"
 
 # On aarch64, GNU ld fails with ".eh_frame_hdr refers to overlapping FDEs"
 # because libtcc1.a is compiled by tcc itself and tcc's arm64 .eh_frame
